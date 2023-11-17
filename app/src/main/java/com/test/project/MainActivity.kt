@@ -1,10 +1,13 @@
 package com.test.project
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
+import com.bumptech.glide.Glide
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,11 +18,20 @@ class MainActivity : AppCompatActivity() {
 
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        txtuser = findViewById(R.id.txtUser)
+        val logo = findViewById<ImageView>(R.id.imageLogo)
+        val imageUrlLogo = "http://192.168.0.19/imagenes/logo.png"
+
+        Glide.with(this)
+            .load(imageUrlLogo)
+            .into(logo)
+
+
+            txtuser = findViewById(R.id.txtUser)
         txtpass = findViewById(R.id.txtPss)
         btnIngresar=findViewById(R.id.btnIngresar)
 
@@ -30,7 +42,10 @@ class MainActivity : AppCompatActivity() {
             val pass = txtpass.text.toString()
 
             if(user=="user" && pass=="pass"){
-                Toast.makeText(this,"Entraste",Toast.LENGTH_SHORT).show()
+               // val miString = "1"
+                val intent = Intent(this, DashBoard::class.java)
+                //intent.putExtra("clave_string", miString)
+                startActivity(intent)
             }
 
             if(user=="" && pass!=null){
