@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
 
             if(user=="user" && pass=="pass"){
                // val miString = "1"
-                val intent = Intent(this, DashBoard::class.java)
+                val intent = Intent(this, store::class.java)
                 //intent.putExtra("clave_string", miString)
                 startActivity(intent)
             }

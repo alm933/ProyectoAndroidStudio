@@ -94,10 +94,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnFinalizar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnRestar" />
+        app:layout_constraintTop_toBottomOf="@+id/btnRestar2" />
 
     <Button
-        android:id="@+id/btnRestar"
+        android:id="@+id/btnRestar2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"

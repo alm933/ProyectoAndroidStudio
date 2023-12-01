@@ -9,9 +9,30 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvProductos"
         android:layout_width="409dp"
-        android:layout_height="729dp"
-        tools:listitem="@layout/fila"
+        android:layout_height="600dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/fila" />
+
+    <Button
+        android:id="@+id/btnProcederC"
+        android:layout_width="126dp"
+        android:layout_height="59dp"
+        android:text="Proceder Compra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTotalFinal" />
+
+    <TextView
+        android:id="@+id/txtTotalFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvProductos" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

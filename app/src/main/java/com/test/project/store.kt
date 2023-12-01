@@ -12,8 +12,14 @@ class store : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_store)
 
-        val imageViewChao = findViewById<ImageView>(R.id.imageView4)
+        val imageViewChao = findViewById<ImageView>(R.id.ImageView4)
         val imageUrlChao = "http://192.168.0.19/imagenes/chao.jpg"
+
+       // val imageViewEnfa =
+
+
+
+
 
         //Bismutol
         val imageViewBismutol =findViewById<ImageView>(R.id.imageView5)
